@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel = "stylesheet" href="styleGame.css">
+  
+</head>
+<body>
+  <div class="game">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <button type="button" class="buttonStartGame" onclick="startGame()">Start Game</button>
+
+      <div id="Level1" class="Level">
+        <p id="titleLevel1" class="levelsTitle">Level 1</p>
+        <img src="images/dog.jpg" alt="Level1" id="dogImg" class="levelsImg">
+          <div class="guess">
+            <input type="text" id="guessBar1" placeholder="Type your anwser" class="guessBar">
+              <button type="button" id="buttonLevel1">Submit</button>
+          </div>
+              <div class="wrongText">
+                  <p id="showWrongText1" class="showWrongText">Try again</p>
+              </div>
+      </div>
+
+      <div id="Level2" class="Level">
+        <p id="titleLevel2" class="levelsTitle">Level 2</p>
+        <img src="images/cat.webp" alt="Level2" id="catImg" class="levelsImg">
+          <div class="guess">
+            <input type="text" id="guessBar2" placeholder="Type your anwser" class="guessBar">
+              <button type="button" id="buttonLevel2">Submit</button>
+          </div>
+            <div class="wrongText">
+              <p id="showWrongText2" class="showWrongText">Try again</p>
+            </div>
+      </div>
+
+      <div id="Level3" class="Level">
+        <p id="titleLevel3" class="levelsTitle">Level 3</p>
+        <img src="images/polarbear.jpg" alt="Level3" id="bearImg" class="levelsImg">
+        <div class="guess">
+          <input type="text" id="guessBar3" placeholder="Type your anwser" class="guessBar">
+            <button type="button" id="buttonLevel3">Submit</button>
+        </div>
+          <div class="wrongText">
+            <p id="showWrongText3" class="showWrongText">Try again</p>
+          </div>
+      </div>
+    
+      <div id="Level4" class="Level">
+        <p id="titleLevel4" class="levelsTitle">Level 4</p>
+        <img src="images/moose.jpg" alt="Level4" id="bearImg" class="levelsImg">
+        <div class="guess">
+          <input type="text" id="guessBar4" placeholder="Type your anwser" class="guessBar">
+            <button type="button" id="buttonLevel4">Submit</button>
+        </div>
+          <div class="wrongText">
+            <p id="showWrongText4" class="showWrongText">Try again</p>
+          </div>
+      </div>
+
+      <div id="Level5" class="Level">
+        <p id="titleLevel5" class="levelsTitle">Level 5</p>
+        <img src="images/greyparrot.jpg" alt="Level5" id="parrotImg" class="levelsImg">
+        <div class="guess">
+          <input type="text" id="guessBar5" placeholder="Type your anwser" class="guessBar">
+            <button type="button" id="buttonLevel5">Submit</button>
+        </div>
+          <div class="wrongText">
+            <p id="showWrongText5" class="showWrongText">Try again</p>
+          </div>
+          <div class="specifyAnimalLevel">
+            <p id="specifyParrot" class="specifyAnimal">Specify the parrot species</p>
+          </div>
+      </div>
+
+      <div id="Level6" class="Level">
+        <p id="titleLevel6" class="levelsTitle">Level 6</p>
+        <img src="images/tigershark.jpg" alt="Level6" id="sharkImg" class="levelsImg">
+        <div class="guess">
+          <input type="text" id="guessBar6" placeholder="Type your anwser" class="guessBar">
+            <button type="button" id="buttonLevel6">Submit</button>
+        </div>
+          <div class="wrongText">
+            <p id="showWrongText6" class="showWrongText">Try again</p>
+          </div>
+          <div class="specifyAnimalLevel">
+            <p id="specifyShark" class="specifyAnimal">Specify the shark species</p>
+          </div>
+      </div>
+
+      <div id="Level7" class="Level">
+        <p id="titleLevel7" class="levelsTitle">Level 7</p>
+        <img src="images/redpanda.jpg" alt="Level7" id="redPandaImg" class="levelsImg">
+        <div class="guess">
+          <input type="text" id="guessBar7" placeholder="Type your anwser" class="guessBar">
+            <button type="button" id="buttonLevel7">Submit</button>
+        </div>
+          <div class="wrongText">
+            <p id="showWrongText7" class="showWrongText">Try again</p>
+          </div>
+          <div class="specifyAnimalLevel">
+            <p id="specifyPanda" class="specifyAnimal">Specify the panda species</p>
+          </div>
+      </div>
+
+      <div id="Level8" class="Level">
+        <p id="titleLevel8" class="levelsTitle">Level 8</p>
+        <img src="images/Tapir.webp" alt="Level8" id="tapirImg" class="levelsImg">
+        <div class="guess">
+            <input type="text" id="guessBar8" placeholder="Type your answer" class="guessBar">
+            <button type="button" id="buttonLevel8">Submit</button>
+        </div>
+        <div class="wrongText">
+            <p id="showWrongText8" class="showWrongText">Try again</p>
+        </div>
+    </div>
+      
+    <div id="Level9" class="Level">
+      <p id="titleLevel9" class="levelsTitle">Level 9</p>
+      <img src="images/armadillo.webp" alt="Level9" id="armadillo" class="levelsImg">
+      <div class="guess">
+          <input type="text" id="guessBar9" placeholder="Type your answer" class="guessBar">
+          <button type="button" id="buttonLevel9">Submit</button>
+      </div>
+      <div class="wrongText">
+          <p id="showWrongText9" class="showWrongText">Try again</p>
+      </div>
+    </div>
+
+    <div id="Level10" class="Level">
+      <p id="titleLevel10" class="levelsTitle">Level 10</p>
+      <img src="images/axolotl.avif" alt="Level10" id="axolotl" class="levelsImg">
+      <div class="guess">
+          <input type="text" id="guessBar10" placeholder="Type your answer" class="guessBar">
+          <button type="button" id="buttonLevel10">Submit</button>
+      </div>
+      <div class="wrongText">
+          <p id="showWrongText10" class="showWrongText">Try again</p>
+      </div>
+  </div>
+      
+    <div id="endScreen">
+      <p id="endScreen1" class="levelsTitle">Congratulations!</p>
+      <img src="images/goldencup.png" alt="The end" id="goldenCup" class="endScreenImg">
+    </div>
+
+  </div>
+
+
+
+  <script src="game.js"></script>
+</body>
+</html>

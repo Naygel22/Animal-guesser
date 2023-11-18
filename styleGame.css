@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #222;
+}
+.game{
+    width: 90%;
+    max-width: 1000px;
+    /*background: linear-gradient(135deg, #4CA1AF, #C4E0E5);*/ 
+    /*background: linear-gradient(50deg, #97978D, #d4d4cd);*/
+    background: #97978D;
+    color: black;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+  width: 550px;
+  height: 400px;
+}
+/*Przycisk Start Game */
+.buttonStartGame {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #212529;
+  color: #212529;
+}
+.buttonStartGame:hover {
+  color: #fff;
+  box-shadow: 0 0 6px 4px #212529;
+}
+.buttonStartGame:hover:after {
+  width: 100%;
+}
+.buttonStartGame:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #212529;
+}
+/*Przycisk Start Game - koniec */
+
+
+.levelsTitle{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  color: #222;
+  
+}
+.levelsImg{
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px black;
+}
+.guess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.guessBar{
+  width: 300px;
+  height: 30px;
+  padding: 7px;
+  border: none;
+}
+.guess button{
+  height: 30px;
+  width: 100px;
+  margin-left: 30px; 
+  cursor: pointer;
+}
+.showWrongText, .specifyAnimal{
+  color: rgb(145, 55, 55);
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: -360px;
+  display: none;
+}
+.Level{
+  display: none;
+}
+.specifyAnimal{
+  color: rgb(145, 55, 55);
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: -260px;
+  display: none;
+}
+.Level button {
+  border: 2px solid #4a4c4e;
+  border-radius: 6px;
+  color: wheat;
+  background: linear-gradient(to bottom, #4a4c4e, #4a4c4e 50%, transparent 50%, transparent);
+  background-size: 100% 200%;
+  transition: background-position 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Level button:hover {
+  box-shadow: 0 0 6px 4px #212529;
+}
+#endScreen{
+  display: none;
+}
+#goldenCup{
+  background: transparent;
+}
+.endScreenImg{
+  width: 40%;
+  height: 40%;
+  margin-top: 40px;
+}
